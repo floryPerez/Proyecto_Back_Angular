@@ -1,0 +1,5 @@
+package com.example.demo.exepciones;
+
+public class ResourceNotFoundException {
+
+}

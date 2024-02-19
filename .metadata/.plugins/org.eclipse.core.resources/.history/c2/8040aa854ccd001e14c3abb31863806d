@@ -1,0 +1,18 @@
+package com.example.demo.servicios;
+
+import java.util.Optional;
+
+import org.hibernate.query.Page;
+import org.springframework.boot.autoconfigure.data.web.SpringDataWebProperties.Pageable;
+
+import com.example.demo.modelo.Empleado;
+
+public interface empleadoServicio {
+	
+	public Iterable<Empleado> findAll();
+	public Page<Empleado> findAll(Pageable pageable);
+	public Optional<Empleado> findById(Long id);
+	public Empleado save(Empleado empleado);
+	public void deleteById(Long id);
+
+}
